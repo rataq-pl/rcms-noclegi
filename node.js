@@ -1,0 +1,1 @@
+source /home/srv52108/nodevenv/domains/noclegi.rcms.pl/public/20/bin/activate && cd /home/srv52108/domains/noclegi.rcms.pl/public
