@@ -34,3 +34,17 @@
         <p>Settings</p>
     </a>
 </li>
+
+<li class="nav-item">
+    <a href="{{ route('websitebuilder') }}" class="nav-link {{ Request::is('webbuilder*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-home"></i>
+        <p>Generator www</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('builders.index') }}" class="nav-link {{ Request::is('builders*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-home"></i>
+        <p>Builders</p>
+    </a>
+</li>

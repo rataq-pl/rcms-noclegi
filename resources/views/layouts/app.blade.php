@@ -1,7 +1,9 @@
 <x-laravel-ui-adminlte::adminlte-layout>
-
+    @push('page_css')
+        <link href="/css/tailwind.css?id={{md5(date('YmdHis'))}}" rel="stylesheet">
+    @endpush
     <body class="hold-transition sidebar-mini layout-fixed">
-        <div class="wrapper">
+        <div class="wrapper" id="app">
             <!-- Main Header -->
             <nav class="main-header navbar navbar-expand navbar-white navbar-light">
                 <!-- Left navbar links -->
@@ -64,3 +66,4 @@
         </div>
     </body>
 </x-laravel-ui-adminlte::adminlte-layout>
+<script src="{{mix('js/app.js')}}"></script>

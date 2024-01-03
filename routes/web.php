@@ -29,3 +29,5 @@ Route::resource('items', App\Http\Controllers\ItemController::class);
 Route::resource('calendars', App\Http\Controllers\CalendarController::class);
 Route::resource('payments', App\Http\Controllers\PaymentController::class);
 Route::resource('settings', App\Http\Controllers\SettingController::class);
+Route::get('webbuilder', [App\Http\Controllers\WebbuilderController::class, 'index'])->name('websitebuilder');
+Route::resource('builders', App\Http\Controllers\BuilderController::class);
